@@ -29,11 +29,7 @@ export default {
 
   data() {
     return {
-      todos: [
-        { id: 0, title: 'Title', comment: 'Comment' },
-        { id: 1, title: 'Title', comment: 'Comment' },
-        { id: 2, title: 'Title', comment: 'Comment' },
-      ],
+      todos: [],
       selectedUsers: [],
       value: 0,
     };
@@ -55,7 +51,7 @@ export default {
       const lengthArr = this.todos.length;
 
       this.todos.push({
-        id: lengthArr > 0 ? this.todos[lengthArr - 1] + 1 : 0,
+        id: lengthArr > 0 ? this.todos[lengthArr - 1].id + 1 : 0,
         title: text,
         comment: '',
       });

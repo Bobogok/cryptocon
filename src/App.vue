@@ -13,7 +13,7 @@
       />
       <label for="name" class="form__label">Todo</label>
     </div>
-    <TodosComponent :text="inputText" />
+    <TodosComponent ref="todos" :text="inputText" />
   </MainLayout>
 </template>
 
@@ -30,7 +30,8 @@ export default {
   },
   methods: {
     handleNewTodo() {
-      console.log(this.inputText);
+      this.$refs.todos.addTodo(this.inputText);
+      this.inputText = '';
     },
   },
 
