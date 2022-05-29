@@ -1,0 +1,46 @@
+.todos {
+  margin-top: 20px;
+}
+
+.todo {
+  padding: 10px 10px 10px 0px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: 1px solid cornsilk;
+  display: flex;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.comment {
+  margin-top: 5px;
+  color: grey;
+}
+
+.checkbox {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.sideMenu {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+}
+
+.delete {
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid red;
+}
