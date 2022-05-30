@@ -13,11 +13,13 @@
 .title {
   font-size: 20px;
   font-weight: 500;
+  background-color: transparent;
 }
 
 .comment {
   margin-top: 5px;
-  color: grey;
+  color: cornsilk;
+  background-color: transparent;
 }
 
 .checkbox {
@@ -29,18 +31,39 @@
 
 .content {
   flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .sideMenu {
+  display: flex;
   margin-top: 5px;
   padding: 10px;
   border: 1px solid cornsilk;
   border-radius: 5px;
 }
 
+.filters {
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+
+  & > li {
+    margin: 0 5px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  & > li.active {
+    border: 1px solid cornsilk;
+  }
+}
+
 .delete {
   color: white;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 4px 10px;
   border: 1px solid red;
 }
